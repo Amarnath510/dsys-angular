@@ -1,3 +1,12 @@
+.select {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.select__label {
+  flex-basis: 30%;
+}
+
 .select__options {
   width: 200px;
   padding: 4px 2px;

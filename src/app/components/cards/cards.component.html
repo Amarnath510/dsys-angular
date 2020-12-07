@@ -22,25 +22,25 @@
     <form action="">
       <h2 class="cards__actions">Component Inputs</h2>
       <ul class="cards__actions">
-        <li class="cards__action">
-          <h3 class="cards__action-title">With Image</h3>
+        <li>
           <app-select
+            [title]="'Has Image'"
             [selectedOption]="'yes'"
             [options]="['yes', 'no']"
             (updateOption)="hasCardImage = ($event === 'yes')">
           </app-select>
         </li>
         <li class="cards__action">
-          <h3 class="cards__action-title">Card Title</h3>
-          <input type="text" maxlength="20" [(ngModel)]='title' name="title" class="card__input" placeholder="Enter Card title"/>
+          <label class="cards__action-title" for="cardTitle">Card Title</label>
+          <input id="cardTitle" type="text" maxlength="20" [(ngModel)]='title' name="title" class="card__input" placeholder="Enter Card title"/>
         </li>
         <li class="cards__action">
-          <h3 class="cards__action-title">Button Label</h3>
-          <input type="text" maxlength="15" [(ngModel)]='btnLabel' name="btnLabel" class="card__input" placeholder="Enter Button label"/>
+          <label class="cards__action-title" for="buttonLabel">Button Label</label>
+          <input id="buttonLabel" type="text" maxlength="15" [(ngModel)]='btnLabel' name="btnLabel" class="card__input" placeholder="Enter Button label"/>
         </li>
         <li class="cards__action">
-          <h3 class="cards__action-title">Content</h3>
-          <textarea rows="4" cols="30" [(ngModel)]="content" name="content" maxlength="120" placeholder="Add content here" class="card__textarea"></textarea>
+          <label class="cards__action-title" for="content">Content</label>
+          <textarea id="content" rows="4" cols="30" [(ngModel)]="content" name="content" maxlength="120" placeholder="Add content here" class="card__textarea"></textarea>
         </li>
       </ul>
     </form>

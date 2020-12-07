@@ -1,11 +1,16 @@
-<select class="select__options"
-    [(ngModel)]="selectedOption"
-    name="selectedOption"
-    (change)="changeOption()">
-  <option *ngFor="let option of options"
-    [value]="option"
-    [selected]="selectedOption === option"
-    class="select__option">
-    {{ option | titlecase }}
-  </option>
-</select>
+<div class="select">
+  <label class="select__label" [for]="title">{{ title }}</label>
+  <select
+      [id]="title"
+      class="select__options"
+      [(ngModel)]="selectedOption"
+      name="selectedOption"
+      (change)="changeOption()">
+    <option *ngFor="let option of options"
+      [value]="option"
+      [selected]="selectedOption === option"
+      class="select__option">
+      {{ option | titlecase }}
+    </option>
+  </select>
+</div>

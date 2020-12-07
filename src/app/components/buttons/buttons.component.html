@@ -14,24 +14,24 @@
       <h2 class="buttons__actions">Component Inputs</h2>
       <ul class="buttons__actions">
         <li class="buttons__action">
-          <h3 class="buttons__action-title">Type</h3>
           <app-select
+            [title]="'Type'"
             [selectedOption]="'primary'"
             [options]="['primary', 'secondary', 'danger']"
             (updateOption)="(type = $event)">
           </app-select>
         </li>
         <li class="buttons__action">
-          <h3 class="buttons__action-title">Size</h3>
           <app-select
+            [title]="'Size'"
             [selectedOption]="'small'"
             [options]="['small', 'medium', 'large']"
             (updateOption)="(size = $event)">
           </app-select>
         </li>
         <li class="buttons__action">
-          <h3 class="buttons__action-title">Border Radius</h3>
           <app-select
+            [title]="'Border Radius'"
             [selectedOption]="'yes'"
             [options]="['yes', 'no']"
             (updateOption)="(hasBorderRadius = ($event === 'yes'))">

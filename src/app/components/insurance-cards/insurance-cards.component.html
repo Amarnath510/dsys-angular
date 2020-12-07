@@ -6,9 +6,9 @@
   <footer>
     <h2>Component Inputs</h2>
     <ul>
-      <li class="insurance-cards__action">
-        <h3 class="insurance-cards__action-title">With Image</h3>
+      <li>
         <app-select
+          [title]="'Has Insurance Card'"
           [selectedOption]="'yes'"
           [options]="['yes', 'no']"
           (updateOption)="(cardWithImage = ($event === 'yes'))">
