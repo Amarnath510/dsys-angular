@@ -1,0 +1,24 @@
+.insurance-card__card {
+  width: 350px;
+  height: 210px;
+  border-radius: 10px;
+  border: 1px solid f6f7fa;
+  background-color: #e7e9ed;
+}
+
+.insurance_card__image,
+.insurance_card__button {
+  height: 100%;
+  width: 100%;
+}
+
+.insurance_card__image {
+  border-radius: 10px;
+}
+
+.insurance_card__button {
+  background-color: transparent;
+  border: none;
+  color: #0069e3;
+  font-size: 100%;
+}

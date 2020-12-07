@@ -1,0 +1,35 @@
+.cards__content {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.cards__footer {
+  margin-top: 32px;
+}
+
+.cards__action {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.cards__action-title {
+  flex-basis: 30%;
+}
+
+.cards__action-options {
+  width: 140px;
+  padding: 4px 8px;
+  border: 1px solid lightgray;
+}
+
+.card__input {
+  width: 200px;
+  padding: 4px 2px;
+}
+
+.card__input,
+.card__textarea {
+  padding: 4px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}

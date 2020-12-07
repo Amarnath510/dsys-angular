@@ -1,0 +1,48 @@
+<section class="cards">
+  <app-title [title]="'Card'"></app-title>
+  <div class="cards__content">
+    <app-card
+      [hasCardImage]="hasCardImage"
+      [isRoundedCard]="true"
+      [imageUrl]="'assets/profile-pic.svg'"
+      [title]="title"
+      [btnLabel]="btnLabel"
+      [content]="content || DEF_CONTENT">
+    </app-card>
+    <app-card *ngIf="hasCardImage"
+      [hasCardImage]="hasCardImage"
+      [isRoundedCard]="true"
+      [imageUrl]="'assets/invalid.svg'"
+      [title]="title"
+      [btnLabel]="btnLabel"
+      [content]="content || DEF_CONTENT">
+    </app-card>
+  </div>
+  <footer class="cards__footer">
+    <form action="">
+      <h2 class="cards__actions">Component Inputs</h2>
+      <ul class="cards__actions">
+        <li class="cards__action">
+          <h3 class="cards__action-title">With Image</h3>
+          <app-select
+            [selectedOption]="'yes'"
+            [options]="['yes', 'no']"
+            (updateOption)="hasCardImage = ($event === 'yes')">
+          </app-select>
+        </li>
+        <li class="cards__action">
+          <h3 class="cards__action-title">Card Title</h3>
+          <input type="text" maxlength="20" [(ngModel)]='title' name="title" class="card__input" placeholder="Enter Card title"/>
+        </li>
+        <li class="cards__action">
+          <h3 class="cards__action-title">Button Label</h3>
+          <input type="text" maxlength="15" [(ngModel)]='btnLabel' name="btnLabel" class="card__input" placeholder="Enter Button label"/>
+        </li>
+        <li class="cards__action">
+          <h3 class="cards__action-title">Content</h3>
+          <textarea rows="4" cols="30" [(ngModel)]="content" name="content" maxlength="120" placeholder="Add content here" class="card__textarea"></textarea>
+        </li>
+      </ul>
+    </form>
+  </footer>
+</section>

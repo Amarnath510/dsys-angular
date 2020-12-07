@@ -1,0 +1,28 @@
+.card {
+  margin-right: 32px;
+}
+
+.card__container {
+  width: 15rem;
+  border: 1px solid #cfd3e0;
+  padding: 16px;
+}
+
+.card__title {
+  margin-top: 12px;
+}
+
+.card__image {
+  width: 10rem;
+  height: 8rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.card__rounded {
+  border-radius: 5px;
+}
+
+.card__content {
+  margin-top: 12px;
+}

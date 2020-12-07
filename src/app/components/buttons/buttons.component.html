@@ -1,0 +1,43 @@
+<section class="buttons">
+  <app-title [title]="'Button'"></app-title>
+  <div class="buttons__content">
+    <app-button
+      [type]="type"
+      [size]="size"
+      [hasBorderRadius]="hasBorderRadius"
+      [title]="type"
+      (btnClicked)="btnClick()">
+    </app-button>
+  </div>
+  <footer class="buttons__footer">
+    <form action="">
+      <h2 class="buttons__actions">Component Inputs</h2>
+      <ul class="buttons__actions">
+        <li class="buttons__action">
+          <h3 class="buttons__action-title">Type</h3>
+          <app-select
+            [selectedOption]="'primary'"
+            [options]="['primary', 'secondary', 'danger']"
+            (updateOption)="(type = $event)">
+          </app-select>
+        </li>
+        <li class="buttons__action">
+          <h3 class="buttons__action-title">Size</h3>
+          <app-select
+            [selectedOption]="'small'"
+            [options]="['small', 'medium', 'large']"
+            (updateOption)="(size = $event)">
+          </app-select>
+        </li>
+        <li class="buttons__action">
+          <h3 class="buttons__action-title">Border Radius</h3>
+          <app-select
+            [selectedOption]="'yes'"
+            [options]="['yes', 'no']"
+            (updateOption)="(hasBorderRadius = ($event === 'yes'))">
+          </app-select>
+        </li>
+      </ul>
+    </form>
+  </footer>
+</section>

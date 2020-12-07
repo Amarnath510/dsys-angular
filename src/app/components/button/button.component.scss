@@ -1,0 +1,40 @@
+.button__btn {
+  border: none;
+  background-color: #FFF;
+  padding: 16px 16px;
+  margin-right: 24px;
+  text-transform: capitalize;
+  margin-top: 16px;
+}
+
+.button__primary-btn {
+  background-color: #007bff;
+  color: #FFF;
+}
+
+.button__secondary-btn {
+  // background-color: #007bff;
+  color: #626b7a;
+  border: 1px solid #007bff;
+}
+
+.button__danger-btn {
+  background-color: #dc3545;
+  color: #FFF;
+}
+
+.button__radius {
+  border-radius: 10px;
+}
+
+.button__size_small {
+  width: 120px;
+}
+
+.button__size_medium {
+  width: 180px;
+}
+
+.button__size_large {
+  width: 210px;
+}

@@ -1,0 +1,7 @@
+<button 
+  type="button"
+  class="button__btn button__{{type}}-btn button__size_{{size}}"
+  [class.button__radius]="hasBorderRadius"
+  (click)="btnClicked.emit()">
+  {{ title }}
+</button>

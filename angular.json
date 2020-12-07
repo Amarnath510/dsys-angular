@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dsys-angular"
+    }
+  },
+  "defaultProject": "dsys-angular",
+  "cli": {
+    "analytics": false
+  }
 }

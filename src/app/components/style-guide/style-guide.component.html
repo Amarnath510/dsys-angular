@@ -1,0 +1,39 @@
+<article class="style-guide">
+  <div class="style-guide__samples-container">
+    <nav class="style-guide__nav">
+      <ul class="style-guide__links">
+        <li class="style-guide__links-item"
+          [class.style-guide__links-item_active]="styleType === StyleTypes.BUTTON">
+          <a [routerLink]="['/']"
+            [queryParams]="{type: 'button'}"
+            class="style-guide__link">Button</a>
+        </li>
+        <li class="style-guide__links-item"
+        [class.style-guide__links-item_active]="styleType === StyleTypes.CARD">
+        <a [routerLink]="['/']"
+        [queryParams]="{type: 'card'}"
+        class="style-guide__link">Card</a>
+      </li>
+      <li class="style-guide__links-item"
+        [class.style-guide__links-item_active]="styleType === StyleTypes.INSURANCE_CARD">
+        <a [routerLink]="['/']"
+        [queryParams]="{type: 'insurance_card'}"
+        class="style-guide__link">Insurance Cards</a>
+      </li>
+      </ul>
+    </nav>
+    <section class="style-guide__data">
+      <div [ngSwitch]="styleType">
+        <ng-container *ngSwitchCase="StyleTypes.BUTTON">
+          <app-buttons></app-buttons>
+        </ng-container>
+        <ng-container *ngSwitchCase="StyleTypes.CARD">
+          <app-cards></app-cards>
+        </ng-container>
+        <ng-container *ngSwitchCase="StyleTypes.INSURANCE_CARD">
+          <app-insurance-cards></app-insurance-cards>
+        </ng-container>
+      </div>
+    </section>
+  </div>
+</article>

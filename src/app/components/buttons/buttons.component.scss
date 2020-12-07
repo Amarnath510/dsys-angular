@@ -1,0 +1,50 @@
+.buttons__btn {
+  border: none;
+  background-color: #FFF;
+  padding: 16px 16px;
+  margin-right: 24px;
+}
+
+.buttons__primary-btn {
+  background-color: #007bff;
+  color: #FFF;
+}
+
+.buttons__secondary-btn {
+  border: 1px solid #007bff;
+}
+
+.buttons__danger-btn {
+  background-color: #dc3545;
+  color: #FFF;
+}
+
+.buttons__radius {
+  border-radius: 10px;
+}
+
+.buttons__size_small {
+  width: 120px;
+}
+
+.buttons__size_medium {
+  width: 180px;
+}
+
+.buttons__size_large {
+  width: 210px;
+}
+
+.buttons__footer {
+  margin-top: 48px;
+}
+
+.buttons__action {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.buttons__action-title {
+  flex-basis: 30%;
+}
+

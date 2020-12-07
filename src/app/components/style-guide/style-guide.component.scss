@@ -1,0 +1,38 @@
+.style-guide {
+  height: 100%;
+  width: 100%;
+}
+
+.style-guide__samples-container {
+  display: flex;
+  margin: 16px;
+  height: 100%;
+}
+
+.style-guide__links-item {
+  padding: 16px;
+  border-bottom: 1px solid lightgray;
+}
+
+.style-guide__link {
+  text-decoration: none;
+  color: #0053b9;
+}
+
+.style-guide__nav {
+  flex-basis:30%;
+  background-color: #f0f1f1;
+  margin-right: 16px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.style-guide__data {
+  flex: 1;
+  margin-left: 48px;
+}
+
+.style-guide__links-item_active {
+  background-color: #cfd3e0;
+}
+

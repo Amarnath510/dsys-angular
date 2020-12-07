@@ -1,0 +1,19 @@
+<article class="insurance-cards">
+  <app-title [title]="'Insurance Card'"></app-title>
+  <div class="insurance-cards__content">
+    <app-insurance-card [hasInsuranceCardImage]="cardWithImage"></app-insurance-card>
+  </div>
+  <footer>
+    <h2>Component Inputs</h2>
+    <ul>
+      <li class="insurance-cards__action">
+        <h3 class="insurance-cards__action-title">With Image</h3>
+        <app-select
+          [selectedOption]="'yes'"
+          [options]="['yes', 'no']"
+          (updateOption)="(cardWithImage = ($event === 'yes'))">
+        </app-select>
+      </li>
+    </ul>
+  </footer>
+</article>
