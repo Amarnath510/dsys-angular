@@ -9,10 +9,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'styleguide',
-    component: StyleGuideComponent
-  },
-  {
     path: '**',
     component: StyleGuideComponent
   }
