@@ -1,6 +1,5 @@
 .cards__content {
   display: flex;
-  // justify-content: space-between;
 }
 
 .cards__footer {
@@ -32,4 +31,19 @@
   padding: 4px;
   border: 1px solid lightgray;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+ .cards__content {
+    flex-direction: column;
+  }
+
+  .card__input {
+    width: 120px;
+    padding: 4px 2px;
+  }
+
+  .card__textarea {
+    width: 120px;
+  }
 }

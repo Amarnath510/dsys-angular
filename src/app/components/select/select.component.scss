@@ -4,3 +4,9 @@
   border: 1px solid lightgray;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 1000px) {
+  .select__options {
+    max-width: 120px;
+  }
+}

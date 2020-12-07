@@ -15,9 +15,9 @@
         class="style-guide__link">Card</a>
       </li>
       <li class="style-guide__links-item"
-        [class.style-guide__links-item_active]="styleType === StyleTypes.INSURANCE_CARD">
+        [class.style-guide__links-item_active]="styleType === StyleTypes.INSURANCE_CARDS">
         <a [routerLink]="['/']"
-        [queryParams]="{type: 'insurance_card'}"
+        [queryParams]="{type: 'insurance_cards'}"
         class="style-guide__link">Insurance Cards</a>
       </li>
       </ul>
@@ -30,7 +30,7 @@
         <ng-container *ngSwitchCase="StyleTypes.CARD">
           <app-cards></app-cards>
         </ng-container>
-        <ng-container *ngSwitchCase="StyleTypes.INSURANCE_CARD">
+        <ng-container *ngSwitchCase="StyleTypes.INSURANCE_CARDS">
           <app-insurance-cards></app-insurance-cards>
         </ng-container>
       </div>
