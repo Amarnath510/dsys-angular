@@ -1,0 +1,31 @@
+.input {
+  display: flex;
+}
+
+.input__label {
+  flex-basis: 30%;
+}
+
+.input__ele {
+  padding: 4px 2px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.input__size_small {
+  width: 200px;
+}
+
+.input__size_medium {
+  width: 300px;
+  padding: 6px 4px;
+  font-size: 105%;
+}
+
+.input__size_large {
+  width: 400px;
+  padding: 8px 6px;
+  font-size: 110%;
+}
+
+

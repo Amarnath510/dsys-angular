@@ -9,17 +9,23 @@
             class="style-guide__link">Button</a>
         </li>
         <li class="style-guide__links-item"
-        [class.style-guide__links-item_active]="styleType === StyleTypes.CARD">
-        <a [routerLink]="['/']"
-        [queryParams]="{type: 'card'}"
-        class="style-guide__link">Card</a>
-      </li>
-      <li class="style-guide__links-item"
-        [class.style-guide__links-item_active]="styleType === StyleTypes.INSURANCE_CARDS">
-        <a [routerLink]="['/']"
-        [queryParams]="{type: 'insurance_cards'}"
-        class="style-guide__link">Insurance Cards</a>
-      </li>
+          [class.style-guide__links-item_active]="styleType === StyleTypes.CARD">
+          <a [routerLink]="['/']"
+          [queryParams]="{type: 'card'}"
+          class="style-guide__link">Card</a>
+        </li>
+        <li class="style-guide__links-item"
+          [class.style-guide__links-item_active]="styleType === StyleTypes.INSURANCE_CARDS">
+          <a [routerLink]="['/']"
+          [queryParams]="{type: 'insurance_cards'}"
+          class="style-guide__link">Insurance Cards</a>
+        </li>
+        <li class="style-guide__links-item"
+          [class.style-guide__links-item_active]="styleType === StyleTypes.INPUT">
+          <a [routerLink]="['/']"
+          [queryParams]="{type: 'input'}"
+          class="style-guide__link">Input</a>
+        </li>
       </ul>
     </nav>
     <section class="style-guide__data">
@@ -32,6 +38,9 @@
         </ng-container>
         <ng-container *ngSwitchCase="StyleTypes.INSURANCE_CARDS">
           <app-insurance-cards></app-insurance-cards>
+        </ng-container>
+        <ng-container *ngSwitchCase="StyleTypes.INPUT">
+          <app-inputs></app-inputs>
         </ng-container>
       </div>
     </section>

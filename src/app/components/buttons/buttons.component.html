@@ -11,9 +11,9 @@
   </div>
   <footer class="buttons__footer">
     <form action="">
-      <h2 class="buttons__actions">Component Inputs</h2>
-      <ul class="buttons__actions">
-        <li class="buttons__action">
+      <h2>Inputs</h2>
+      <ul>
+        <li>
           <app-select
             [title]="'Type'"
             [selectedOption]="'primary'"
@@ -21,7 +21,7 @@
             (updateOption)="(type = $event)">
           </app-select>
         </li>
-        <li class="buttons__action">
+        <li>
           <app-select
             [title]="'Size'"
             [selectedOption]="'small'"
@@ -29,13 +29,19 @@
             (updateOption)="(size = $event)">
           </app-select>
         </li>
-        <li class="buttons__action">
+        <li>
           <app-select
             [title]="'Border Radius'"
             [selectedOption]="'yes'"
             [options]="['yes', 'no']"
             (updateOption)="(hasBorderRadius = ($event === 'yes'))">
           </app-select>
+        </li>
+      </ul>
+      <h2 class="actions-title">Action</h2>
+      <ul>
+        <li>
+          <p>Click Event</p>
         </li>
       </ul>
     </form>

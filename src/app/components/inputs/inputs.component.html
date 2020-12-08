@@ -1,0 +1,37 @@
+<div class="inputs">
+  <app-title [title]="'Input'"></app-title>
+  <div class="inputs__content">
+    <app-input
+      [title]="title"
+      [type]="type"
+      [size]="size"
+      [content]="content"
+      [placeholder]="placeholder"
+      [showLabel]="false"
+      (contentUpdated)="updateContent($event)">
+    </app-input>
+  </div>
+  <footer>
+    <form>
+      <h2>Inputs</h2>
+      <ul>
+        <li>
+          <app-select
+            [title]="'Size'"
+            [selectedOption]="'small'"
+            [options]="['small', 'medium', 'large']"
+            (updateOption)="(size = $event)">
+          </app-select>
+        </li>
+        <li>
+          <app-select
+            [title]="'Type'"
+            [selectedOption]="'text'"
+            [options]="['text', 'password']"
+            (updateOption)="(type = $event)">
+          </app-select>
+        </li>
+      </ul>
+    </form>
+  </footer>
+</div>

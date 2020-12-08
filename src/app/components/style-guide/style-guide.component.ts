@@ -5,7 +5,8 @@ export enum StyleTypes {
   BUTTON = 'BUTTON',
   DROPDOWN = 'DROPDOWN',
   CARD = 'CARD',
-  INSURANCE_CARDS =  'INSURANCE_CARDS'
+  INSURANCE_CARDS =  'INSURANCE_CARDS',
+  INPUT = 'INPUT'
 }
 
 @Component({

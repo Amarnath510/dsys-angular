@@ -1,5 +1,5 @@
 <div class="select">
-  <label class="select__label" [for]="title">{{ title }}</label>
+  <label class="select__label" [for]="title" *ngIf="showLabel">{{ title }}</label>
   <select
       [id]="title"
       class="select__options"

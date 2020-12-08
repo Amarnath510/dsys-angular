@@ -1,0 +1,12 @@
+<div class="input">
+  <label class="input__label" [for]="title" *ngIf="showLabel">{{title}}</label>
+  <input
+    [id]="title"
+    [type]="type || 'text'"
+    [maxlength]="maxLength"
+    [(ngModel)]='content'
+    [name]="title"
+    class="input__ele input__size_{{size}}"
+    [placeholder]="placeholder || 'Type Content'"
+    (keyup)="updateContent()"/>
+</div>

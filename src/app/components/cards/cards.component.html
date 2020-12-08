@@ -20,7 +20,7 @@
   </div>
   <footer class="cards__footer">
     <form action="">
-      <h2 class="cards__actions">Component Inputs</h2>
+      <h2 class="cards__actions">Inputs</h2>
       <ul class="cards__actions">
         <li>
           <app-select
@@ -31,16 +31,32 @@
           </app-select>
         </li>
         <li class="cards__action">
-          <label class="cards__action-title" for="cardTitle">Card Title</label>
-          <input id="cardTitle" type="text" maxlength="20" [(ngModel)]='title' name="title" class="card__input" placeholder="Enter Card title"/>
+          <app-input class="cards__input cards__card-title"
+            [title]="'Card Title'"
+            [size]="'small'"
+            [placeholder]="'Enter Card title'"
+            (contentUpdated)="title = $event">
+          </app-input>
         </li>
         <li class="cards__action">
-          <label class="cards__action-title" for="buttonLabel">Button Label</label>
-          <input id="buttonLabel" type="text" maxlength="15" [(ngModel)]='btnLabel' name="btnLabel" class="card__input" placeholder="Enter Button label"/>
+          <app-input
+            class="cards__input cards__card-title"
+            [title]="'Button Label'"
+            [size]="'small'"
+            [placeholder]="'Enter Button label'"
+            (contentUpdated)="btnLabel = $event">
+          </app-input>
         </li>
         <li class="cards__action">
           <label class="cards__action-title" for="content">Content</label>
           <textarea id="content" rows="4" cols="30" [(ngModel)]="content" name="content" maxlength="120" placeholder="Add content here" class="card__textarea"></textarea>
+        </li>
+      </ul>
+
+      <h2 class="actions-title">Action</h2>
+      <ul>
+        <li>
+          <p>Click Event</p>
         </li>
       </ul>
     </form>

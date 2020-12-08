@@ -20,7 +20,7 @@ export class CardComponent implements OnInit {
   }
 
   cardClicked(): void {
-    alert('Card Details');
+    alert('Show Card Details');
   }
 
 }

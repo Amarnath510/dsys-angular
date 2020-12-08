@@ -4,16 +4,27 @@
     <app-insurance-card [hasInsuranceCardImage]="cardWithImage"></app-insurance-card>
   </div>
   <footer>
-    <h2>Component Inputs</h2>
-    <ul>
-      <li>
-        <app-select
-          [title]="'Has Insurance Card'"
-          [selectedOption]="'yes'"
-          [options]="['yes', 'no']"
-          (updateOption)="(cardWithImage = ($event === 'yes'))">
-        </app-select>
-      </li>
-    </ul>
+    <form action="">
+      <h2>Inputs</h2>
+      <ul>
+        <li>
+          <app-select
+            [title]="'Has Insurance Card'"
+            [selectedOption]="'yes'"
+            [options]="['yes', 'no']"
+            (updateOption)="(cardWithImage = ($event === 'yes'))">
+          </app-select>
+        </li>
+      </ul>
+
+      <ng-container *ngIf="!cardWithImage">
+        <h2 class="actions-title">Action</h2>
+        <ul>
+          <li>
+            Click Event
+          </li>
+        </ul>
+      </ng-container>
+    </form>
   </footer>
 </article>

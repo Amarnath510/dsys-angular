@@ -15,6 +15,8 @@ import { InsuranceCardsComponent } from './components/insurance-cards/insurance-
 import { InsuranceCardComponent } from './components/insurance-card/insurance-card.component';
 import { SelectComponent } from './components/select/select.component';
 import { TitleComponent } from './components/title/title.component';
+import { InputsComponent } from './components/inputs/inputs.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { TitleComponent } from './components/title/title.component';
     InsuranceCardsComponent,
     InsuranceCardComponent,
     SelectComponent,
-    TitleComponent
+    TitleComponent,
+    InputsComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
