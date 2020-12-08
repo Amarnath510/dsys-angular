@@ -2,12 +2,12 @@
   <app-title [title]="'Input'"></app-title>
   <div class="inputs__content">
     <app-input
-      [title]="title"
+      [title]="title || 'Sample Label'"
       [type]="type"
       [size]="size"
       [content]="content"
       [placeholder]="placeholder"
-      [showLabel]="false"
+      [showLabel]="true"
       (contentUpdated)="updateContent($event)">
     </app-input>
   </div>

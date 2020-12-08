@@ -1,7 +1,7 @@
 <div class="input">
   <label class="input__label" [for]="title" *ngIf="showLabel">{{title}}</label>
   <input
-    [id]="title"
+    [id]="title || 'some-input-id'"
     [type]="type || 'text'"
     [maxlength]="maxLength"
     [(ngModel)]='content'
