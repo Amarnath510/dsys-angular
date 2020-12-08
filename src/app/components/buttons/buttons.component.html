@@ -5,7 +5,7 @@
       [type]="type"
       [size]="size"
       [hasBorderRadius]="hasBorderRadius"
-      [title]="type"
+      [title]="title || type"
       (btnClicked)="btnClick()">
     </app-button>
   </div>
@@ -13,6 +13,15 @@
     <form action="">
       <h2>Inputs</h2>
       <ul>
+        <li class="buttons__input">
+          <app-input
+            [title]="'Button Label'"
+            [size]="'small'"
+            [placeholder]="'Enter Button label'"
+            [maxLength]="10"
+            (contentUpdated)="title = $event">
+          </app-input>
+        </li>
         <li>
           <app-select
             [title]="'Type'"
@@ -38,7 +47,7 @@
           </app-select>
         </li>
       </ul>
-      <h2 class="actions-title">Action</h2>
+      <h2 class="actions-title">Actions</h2>
       <ul>
         <li>
           <p>Click Event</p>

@@ -10,6 +10,7 @@ export class ButtonsComponent implements OnInit {
   size = 'small';
   type = 'primary';
   hasBorderRadius = true;
+  title: string;
 
   constructor() { }
 

@@ -19,16 +19,15 @@ export class InputComponent implements OnInit {
   @Input() content = '';
   @Input() placeholder: string;
   @Input() showLabel = true;
+  @Input() maxLength: number;
   @Output() contentUpdated = new EventEmitter<string>();
 
-  maxLength: number;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log('title = ', this.title);
     this.size = this.size || 'small';
-    this.maxLength = this.sizeMap[this.size];
+    this.maxLength = this.maxLength || this.sizeMap[this.size];
   }
 
   updateContent(): void {
