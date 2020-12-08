@@ -1,14 +1,17 @@
-# DsysAngular
+# Design Systems - Style Guide
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+The purpose of this application is to create a style guide for reusable Angular components and how to use these components in any feature developed using Angular framework.
+
+## Sample Components
+
+- Button
+- Input
+- Cards
+- Insurance Cards
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `cd to project root` && `npm run dev`
 
 ## Build
 
@@ -21,7 +24,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
