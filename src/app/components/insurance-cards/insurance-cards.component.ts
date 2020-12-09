@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class InsuranceCardsComponent implements OnInit {
 
   cardWithImage = true;
+  imageUrl = 'assets/info.svg';
 
   constructor() { }
 

@@ -1,7 +1,10 @@
 <article class="insurance-cards">
   <app-title [title]="'Insurance Card'"></app-title>
   <div class="insurance-cards__content">
-    <app-insurance-card [hasInsuranceCardImage]="cardWithImage"></app-insurance-card>
+    <app-insurance-card
+      [hasInsuranceCardImage]="cardWithImage"
+      [imageUrl]="imageUrl">
+    </app-insurance-card>
   </div>
   <footer>
     <form action="">
@@ -13,6 +16,14 @@
             [selectedOption]="'yes'"
             [options]="['yes', 'no']"
             (updateOption)="(cardWithImage = ($event === 'yes'))">
+          </app-select>
+        </li>
+        <li>
+          <app-select
+            [title]="'Image Url'"
+            [selectedOption]="'valid'"
+            [options]="['valid', 'invalid']"
+            (updateOption)="imageUrl = ($event === 'valid' ? 'assets/info.svg' : 'assets/info1.svg')">
           </app-select>
         </li>
       </ul>

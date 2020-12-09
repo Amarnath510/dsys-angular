@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class InsuranceCardComponent implements OnInit {
 
   @Input() hasInsuranceCardImage = true;
+  @Input() imageUrl: string;
 
   constructor() { }
 
