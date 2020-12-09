@@ -18,7 +18,7 @@
             (updateOption)="(cardWithImage = ($event === 'yes'))">
           </app-select>
         </li>
-        <li>
+        <li *ngIf="cardWithImage">
           <app-select
             [title]="'Image Url'"
             [selectedOption]="'valid'"
