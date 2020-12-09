@@ -32,8 +32,4 @@ export class StyleGuideComponent implements OnInit {
     });
   }
 
-  display(type): void {
-
-  }
-
 }
