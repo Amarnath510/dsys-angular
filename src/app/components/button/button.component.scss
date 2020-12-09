@@ -5,21 +5,39 @@
   margin-right: 24px;
   text-transform: capitalize;
   margin-top: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .button__primary-btn {
   background-color: #0053b9;
   color: #FFF;
+
+  &:hover {
+    background-color: #003b87;
+  }
 }
 
 .button__secondary-btn {
-  color: #282c37;
+  color: #007bff;
   border: 1px solid #007bff;
+
+  &:hover {
+    background-color: #0053b9;
+    color: #FFF;
+  }
 }
 
 .button__danger-btn {
   background-color: #dc3545;
   color: #FFF;
+
+  &:hover {
+    background-color: #cc4545;
+    color: #FFF;
+  }
 }
 
 .button__radius {
